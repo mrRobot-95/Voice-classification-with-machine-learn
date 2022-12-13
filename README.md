@@ -7,24 +7,43 @@ There are four varieties of voices, each with a positive and healthy tone (SPEEC
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LABELING - Integer numbers were utilized for labeling. There are several methods for labeling the training data files. You can add 1 for healthy files and 2 for negative files to boost accuracy but restrict the number of classifiers. You may provide a varied amount of labels to each speech type, which allows you to identify distinct voice kinds but reduces the model's accuracy. The effective method is to categorize only the primary types of voices as healthy and positive, rather than the subcategories. A labeling example is shown below.
 
+------------------------------------------
 HEALTHY_SPEECH_COUNTING_Normal - HSCN - 1
+------------------------------------------
 HEALTHY_SPEECH_COUNTING_Fast - HSCF - 1
+------------------------------------------
 POSITIVE_SPEECH_COUNTING_Normal - PSCN - 2
+------------------------------------------
 POSITIVE_SPEECH_COUNTING_Fast - PSCF - 2
+------------------------------------------
 HEALTHY_COUGH_High - HCH - 3
+------------------------------------------
 HEALTHY_COUGH_Slow - HCS - 3
+------------------------------------------
 POSITIVE_COUGH_High - PCH - 4
+------------------------------------------
 POSITIVE_COUGH_Slow - PCS - 4
+------------------------------------------
 HEALTHY_SPEECH_VOWELS_A - HSVA - 5
+------------------------------------------
 HEALTHY_SPEECH_VOWELS_E - HSVE - 5
+------------------------------------------
 HEALTHY_SPEECH_VOWELS_O - HSVO - 5
+------------------------------------------
 POSITIVE_SPEECH_VOWELS_A - PSVA - 6
+------------------------------------------
 POSITIVE_SPEECH_VOWELS_E - PSVE - 6
+------------------------------------------
 POSITIVE_SPEECH_VOWELS_O - PSVO - 6
+------------------------------------------
 BREATHING_HEALTHY_Deep - HBD -7
+------------------------------------------
 BREATHING_HEALTHY_Slow - HBS -7 
+------------------------------------------
 BREATHING_POSITIVE_Deep - PBD - 8
+------------------------------------------
 BREATHING_POSITIVE_Slow - PBS - 8
+------------------------------------------
 
 If you utilize various types of labels for all categories and sub-categories, you may add only one or two file paths to list X (list with mypaths) and not use voices in the labeling process. This will improve accuracy, but you will need to run many models to categorize voices.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
